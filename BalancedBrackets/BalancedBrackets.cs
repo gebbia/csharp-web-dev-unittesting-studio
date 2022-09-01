@@ -32,7 +32,7 @@ namespace BalancedBracketsNS
                 {
                     brackets++;
                 }
-                else if (ch == ']')
+                else if (ch == ']' && brackets > 0)
                 {
                     brackets--;
                 }
@@ -41,3 +41,4 @@ namespace BalancedBracketsNS
         }
     }
 }
+
